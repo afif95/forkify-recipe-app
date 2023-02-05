@@ -122,6 +122,11 @@ const controladdrecipe = async function (newRecipe) {
     addrecipeView.rendererror(err.message);
   }
 }
+
+const newfeature = function () {
+  console.log('welcome');
+};
+
 //subscriber (publisher subscriber pattern)
 const init = function () {
   bookmarksView.addHandlerRender(controlbookmarks);
@@ -131,6 +136,7 @@ const init = function () {
   searchView.addhandlersearch(controlsearchresults);
   paginationView.addhandlerclick(controlpagination);
   addrecipeView._addHandlerUpload(controladdrecipe);
+  newfeature();
 };
 
 init();
