@@ -61,7 +61,6 @@ const controlsearchresults = async function () {
 
 const controlpagination = function (gotopage) {
   //render new results
-  // resultsView.render(model.state.search.results);
   resultsView.render(model.getsearchresultsbypage(gotopage));
 
   //render new pagination buttons
@@ -123,10 +122,6 @@ const controladdrecipe = async function (newRecipe) {
   }
 }
 
-const newfeature = function () {
-  console.log('welcome');
-};
-
 //subscriber (publisher subscriber pattern)
 const init = function () {
   bookmarksView.addHandlerRender(controlbookmarks);
@@ -136,7 +131,6 @@ const init = function () {
   searchView.addhandlersearch(controlsearchresults);
   paginationView.addhandlerclick(controlpagination);
   addrecipeView._addHandlerUpload(controladdrecipe);
-  newfeature();
 };
 
 init();
