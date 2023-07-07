@@ -1,7 +1,8 @@
-# forkify Recipe Application
+# Forkify Recipe Application
 
 ## Recipe application with custom recipe uploads
 
+### How to run
 Prerequisites and dependencies:
 
 $sudo apt install -y curl 
