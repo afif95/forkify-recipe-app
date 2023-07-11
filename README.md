@@ -26,3 +26,6 @@ npm i parcel@2.2.1 -D
 to run: npm start
 
 to build: npm run build
+
+## Deployed Project
+https://forkify-abk.netlify.app/
